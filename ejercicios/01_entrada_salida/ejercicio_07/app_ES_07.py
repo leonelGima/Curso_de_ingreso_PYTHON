@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre:Leonel
+apellido:Gima
 ---
 Ejercicio: entrada_salida_07
 ---
@@ -50,15 +50,76 @@ class App(customtkinter.CTk):
         self.btn_dividir.grid(row=5, pady=10, columnspan=2, sticky="nsew")
 
     def btn_sumar_on_click(self):
-        pass
+
+        #SUMA +
+        #RESTA - 
+        #MULTIPLICACION *
+        #DIVISION /
+
+        numero_uno_texto = self.txt_operador_a.get()
+        numero_uno_a_numero = int(numero_uno_texto)
+
+        numero_dos_texto = self.txt_operador_b.get()
+        numero_dos_a_numero = int(numero_dos_texto)
+
+        resultado = numero_uno_a_numero + numero_dos_a_numero
+
+        resultado_a__texto = str(resultado)
+        mensaje= "el resultado de la suma es : " + resultado_a__texto
+
+        alert(title= "suma",message=mensaje)
+
+        
 
     def btn_restar_on_click(self):
+
+        numero_uno_texto = self.txt_operador_a.get()
+        numero_uno_a_numero = int(numero_uno_texto)
+
+        numero_dos_texto = self.txt_operador_b.get()
+        numero_dos_a_numero = int(numero_dos_texto)
+
+        resultado = numero_uno_a_numero - numero_dos_a_numero
+
+        resultado_a__texto = str(resultado)
+        mensaje= "el resultado de la resta es : " + resultado_a__texto
+
+        alert(title= "resta",message=mensaje)
+
         pass
 
     def btn_multiplicar_on_click(self):
+      
+        numero_uno_texto = self.txt_operador_a.get()
+        numero_uno_a_numero = int(numero_uno_texto)
+
+        numero_dos_texto = self.txt_operador_b.get()
+        numero_dos_a_numero = int(numero_dos_texto)
+
+        resultado = numero_uno_a_numero * numero_dos_a_numero
+
+        resultado_a__texto = str(resultado)
+        mensaje= "el resultado de la multipplicacion es : " + resultado_a__texto
+
+        alert(title= "multipliacar",message=mensaje)
+
         pass
 
     def btn_dividir_on_click(self):
+
+        numero_uno_texto = self.txt_operador_a.get()
+        numero_uno_a_numero = int(numero_uno_texto)
+
+        numero_dos_texto = self.txt_operador_b.get()
+        numero_dos_a_numero = int(numero_dos_texto)
+
+        resultado = numero_uno_a_numero / numero_dos_a_numero
+
+        resultado_a__texto = str(resultado)
+        mensaje= "el resultado de la division es : " + resultado_a__texto
+
+        alert(title= "dividir",message=mensaje)
+
         pass
         
 if __name__ == "__main__":
