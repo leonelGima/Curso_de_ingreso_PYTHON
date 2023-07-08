@@ -40,8 +40,22 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        numero = int(self.txt_sueldo.get())
-        alert("lalal", numero)
+
+        PRECIO = int(self.txt_sueldo.get())
+
+        incremento = int(self.txt_incremento.get())
+
+        aumento = PRECIO *incremento / 100
+
+
+       #precio_final = PRECIO + aumento
+
+         #precio_final = PRECIO - porcentaje
+
+        precio_final = PRECIO + aumento 
+       # precio_final = PRECIO * 0.90
+
+        alert(title="EJO 1",message= precio_final)
         
     
 if __name__ == "__main__":

@@ -36,7 +36,7 @@ class App(customtkinter.CTk):
 
     def btn_mostrar_on_click(self):
         #self.txt_nombre
-        nombew = self.txt_nombre.get()
+        nombre = self.txt_nombre.get()
         alert(title="su nombre",message=nombre)
         
                 

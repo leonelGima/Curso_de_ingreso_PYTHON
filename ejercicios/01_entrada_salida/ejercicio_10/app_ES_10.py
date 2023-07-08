@@ -40,7 +40,27 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        numero = prompt("titulo","Ingrese algo")
+
+        PRECIO = int(self.txt_importe.get())
+
+        porcentaje = int(self.txt_descuento.get())
+
+        descuento = PRECIO *porcentaje / 100
+
+
+       #precio_final = PRECIO + aumento
+
+         #precio_final = PRECIO - porcentaje
+
+        precio_final = PRECIO - descuento
+       # precio_final = PRECIO * 0.90
+
+        alert(title="EJO 1",message= precio_final)
+
+        
+
+
+        
         
     
 if __name__ == "__main__":
